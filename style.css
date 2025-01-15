@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  min-height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: Quicksand, sans-serif;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.form-checklist {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-checklist label {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.form-checklist input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.form-checklist input[type="checkbox"]:hover {
+  border-color: #4caf50;
+  transition: border-color 0.3s ease;
+}
+
+.btnbook {
+  width: fit-content;
+  font-family: Quicksand, sans-serif;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+  font-size: 16px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btnbook:hover {
+  opacity: 0.8;
+}
+
+header {
+  background: #008080;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+.container.shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-search {
+  margin: 10;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.form-search label {
+  font-size: 16px;
+  color: black;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.form-search input[type="text"] {
+  padding: 12px 12px;
+  margin: 0;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  min-width: 0;
+  transition: border-color 0.3s ease;
+}
+
+.form-search input[type="text"]:focus {
+  border-color: #008080;
+  outline: none;
+}
+
+.form-search button {
+  padding: 0 16px;
+  margin: 0;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  min-width: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.item {
+  border: 2px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.item h2 {
+  margin-bottom: 8px;
+}
+
+.item p {
+  margin-bottom: 4px;
+}
+
+.complete-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.incomplete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button {
+  background-color: #ff5722;
+  color: white;
+}
+
+.edit-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .form-search {
+    flex-wrap: nowrap;
+    gap: 8px; /
+  }
+
+  .form-search input[type="text"],
+  .form-search button {
+    width: 100%;
+  }
+}
